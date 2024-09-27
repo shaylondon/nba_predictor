@@ -1,7 +1,7 @@
 from nba_api.stats.endpoints import leaguedashteamstats
 
 def main():
-    team_advanced_stats = leaguedashteamstats.LeagueDashTeamStats(measure_type_detailed_defense='Advanced')
+    team_advanced_stats = leaguedashteamstats.LeagueDashTeamStats(last_n_games=10,measure_type_detailed_defense='Advanced')
     
     team_advanced_stats_df = team_advanced_stats.get_data_frames()[0]
     
