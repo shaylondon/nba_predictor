@@ -1,7 +1,10 @@
 from nba_api.stats.endpoints import leaguedashteamstats
 from pandas import DataFrame
 from nba_api.live.nba.endpoints import scoreboard
-
+from config import *
+import requests
+from datetime import datetime
+import json
 
 
 def main():
@@ -9,6 +12,33 @@ def main():
     print(overs_matchups)
     matchup_avg_total_pts = [project_total_pts(matchup,10) for matchup in overs_matchups]
     print(matchup_avg_total_pts)
+    print(get_total_lines())
+
+def get_total_lines() -> list:
+    json_data = get_betting_info()
+    lines = []
+    for i in range(len(json_data['events'])):
+        team1 = json_data['events'][i]['teams'][0]['name']
+        team2 = json_data['events'][i]['teams'][1]['name']
+        total = json_data['events'][i]['lines']['19']['total']['total_over']
+        lines.append([team1, team2, total])
+    return lines
+
+def get_betting_info():
+    today: str = datetime.today().strftime('%Y-%m-%d')
+    today: str = '2024-11-17'
+    url = "https://therundown-therundown-v1.p.rapidapi.com/sports/4/events/%s" % today
+
+    querystring = { "affiliate_ids": "19,23", "offset": "300"}
+
+    headers = {
+        "x-rapidapi-key": TheRundown_API_KEY,
+        "x-rapidapi-host": "therundown-therundown-v1.p.rapidapi.com"
+    }
+
+    response = requests.get(url, headers=headers, params=querystring)
+
+    return response.json()
 
 def project_total_pts(matchup: list, last_n_games: int) -> list:
     return [matchup[0], matchup[1], team_ppg_last_n_games(matchup, last_n_games)[0][1] + team_ppg_last_n_games(matchup, last_n_games)[1][1]]

@@ -5,7 +5,7 @@ This model accesses [NBA.com](https://www.nba.com/stats) official stats and uses
 `nba_api` and `pandas` required.
 
 ```bash
-pip install nba_api ; pip install pandas
+pip install nba_api ; pip install pandas ; pip install requests
 ```
 ## NBA API
 This model uses Swar Patel's [`nba_api`](https://github.com/swar/nba_api) API Client.
