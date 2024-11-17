@@ -2,10 +2,10 @@
 This model accesses [NBA.com](https://www.nba.com/stats) official stats and uses them to leverage stat predictions.
 
 # Getting Started
-`nba_api` and `pandas` required.
+`nba_api`, `pandas`, `requests`, `tabulate` required.
 
 ```bash
-pip install nba_api ; pip install pandas ; pip install requests
+pip install nba_api pandas requests tabulate
 ```
 ## NBA API
 This model uses Swar Patel's [`nba_api`](https://github.com/swar/nba_api) API Client.

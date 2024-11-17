@@ -1,32 +1,44 @@
+import pandas as pd
 from nba_api.stats.endpoints import leaguedashteamstats
 from pandas import DataFrame
 from nba_api.live.nba.endpoints import scoreboard
 from config import *
 import requests
 from datetime import datetime
-import json
+from tabulate import tabulate
 
 
 def main():
-    overs_matchups = overs_last_n_games(20,10)
-    print(overs_matchups)
-    matchup_avg_total_pts = [project_total_pts(matchup,10) for matchup in overs_matchups]
-    print(matchup_avg_total_pts)
-    print(get_total_lines())
+    last_n_games: int = int(input('Last _ Games: '))
+    top_n_teams: int = int(input('Top _ Teams: '))
+    matchups = overs_last_n_games(top_n_teams,last_n_games)
+    if not matchups:
+        print('No matchups fit criteria on this date.')
+        return
+    matchups_with_pts = [project_total_pts(matchup,last_n_games) for matchup in matchups]
+    for over_game in matchups_with_pts:
+        for game in get_total_lines():
+            if over_game[0] == game[0]:
+                over_game.append(game[2])
+
+    overs = [game for game in matchups_with_pts if game[2] + 10 >= game[3]]
+
+    df = pd.DataFrame(overs,columns=['Away Team','Home Team',f'Last {last_n_games} Games Avg Total Points', 'DraftKings Total Points Line'])
+
+    print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
 
 def get_total_lines() -> list:
     json_data = get_betting_info()
     lines = []
     for i in range(len(json_data['events'])):
-        team1 = json_data['events'][i]['teams'][0]['name']
-        team2 = json_data['events'][i]['teams'][1]['name']
+        team1 = json_data['events'][i]['teams'][0]['name'].split(' ')[-1]
+        team2 = json_data['events'][i]['teams'][1]['name'].split(' ')[-1]
         total = json_data['events'][i]['lines']['19']['total']['total_over']
         lines.append([team1, team2, total])
     return lines
 
 def get_betting_info():
     today: str = datetime.today().strftime('%Y-%m-%d')
-    today: str = '2024-11-17'
     url = "https://therundown-therundown-v1.p.rapidapi.com/sports/4/events/%s" % today
 
     querystring = { "affiliate_ids": "19,23", "offset": "300"}
