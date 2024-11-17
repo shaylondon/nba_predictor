@@ -1,10 +1,10 @@
 ## November 17th, 2024
 ### L10 Games
-* Nuggets @ Grizzlies O229 (DK 11:24AM)
-* Mavericks @ Thunder O231 (DK, FD 11:24AM)
+* Nuggets @ Grizzlies O227.5 (DK 3:54PM)
+* Mavericks @ Thunder O227 (DK 3:54PM)
 ### L7 Games
-* Nuggets @ Grizzlies O229 (DK 11:24AM)
-* Mavericks @ Thunder O231 (DK, FD 11:24AM)
+* Nuggets @ Grizzlies O227.5 (DK 3:54PM)
+* Mavericks @ Thunder O227 (DK 3:54PM)
 
 ## November 18th, 2024
 ### L10 Games
