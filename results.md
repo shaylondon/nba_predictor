@@ -12,6 +12,8 @@
 
 ## November 19th, 2024
 ### L10 Games
+* [ - ] Cavaliers @ Celtics O235 (DK 11:07AM)
+* [ - ] Nuggets @ Grizzlies O227 (DK 11:07AM) - ONLY IF JOKIC HEALTHY
 
 ## November 20th, 2024
 ### L10 Games
