@@ -1,5 +1,5 @@
 
-## 2-1
+## 2-2
 ## November 17th, 2024
 ### L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
