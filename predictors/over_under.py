@@ -36,7 +36,7 @@ def get_total_lines() -> list:
         lines.append([team1, team2, dk_total, fd_total])
     return lines
 
-def project_total_pts(matchup: list, last_n_games: int) -> list:
+def avg_total_pts_last_n_games(matchup: list, last_n_games: int) -> list:
     return [matchup[0], matchup[1], team_ppg_last_n_games(matchup, last_n_games)[0][1] + team_ppg_last_n_games(matchup, last_n_games)[1][1]]
 
 def overs_last_n_games(top_n_teams: int, last_n_games=None) -> list:
@@ -110,7 +110,7 @@ def main():
     if not matchups:
         print('No matchups fit criteria on this date.')
         return
-    matchups_with_pts = [project_total_pts(matchup,last_n_games) for matchup in matchups]
+    matchups_with_pts = [avg_total_pts_last_n_games(matchup, last_n_games) for matchup in matchups]
     for over_game in matchups_with_pts:
         for game in get_total_lines():
             if over_game[0] == game[0]:
