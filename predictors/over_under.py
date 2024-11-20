@@ -117,8 +117,6 @@ def main():
                 over_game.append(game[2])
                 over_game.append(game[3])
 
-    # overs = [game for game in matchups_with_pts if game[2] + 10 >= game[3]]
-
     df = pd.DataFrame(matchups_with_pts,columns=['Away Team','Home Team',f'Last {last_n_games} Games Avg Total Points', 'DraftKings Total Points Line', 'FanDuel Total Points Line'])
 
     print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
