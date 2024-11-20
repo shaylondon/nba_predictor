@@ -1,10 +1,12 @@
-import pandas as pd
-from pandas import DataFrame
-import requests
 from datetime import datetime
-from tabulate import tabulate
-from nba_api.stats.endpoints import leaguedashteamstats
+
+import pandas as pd
+import requests
 from nba_api.live.nba.endpoints import scoreboard
+from nba_api.stats.endpoints import leaguedashteamstats
+from pandas import DataFrame
+from tabulate import tabulate
+
 from config import *
 
 
