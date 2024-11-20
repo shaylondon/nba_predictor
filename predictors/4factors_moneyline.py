@@ -10,22 +10,6 @@ from tabulate import tabulate
 from config import *
 from over_under import *
 
-
-def get_betting_info():
-    today: str = datetime.today().strftime('%Y-%m-%d')
-    url = "https://therundown-therundown-v1.p.rapidapi.com/sports/4/events/%s" % today
-
-    querystring = { "affiliate_ids": "19,23", "offset": "300"}
-
-    headers = {
-        "x-rapidapi-key": TheRundown_API_KEY,
-        "x-rapidapi-host": "therundown-therundown-v1.p.rapidapi.com"
-    }
-
-    response = requests.get(url, headers=headers, params=querystring)
-
-    return response.json()
-
 def get_total_lines() -> list:
     json_data = get_betting_info()
     lines = []
@@ -37,9 +21,6 @@ def get_total_lines() -> list:
         lines.append([team1, team2, dk_total, fd_total])
     return lines
 
-def project_total_pts(matchup: list, last_n_games: int) -> list:
-    return [matchup[0], matchup[1], team_ppg_last_n_games(matchup, last_n_games)[0][1] + team_ppg_last_n_games(matchup, last_n_games)[1][1]]
-
 def overs_last_n_games(top_n_teams: int, last_n_games=None) -> list:
     top_10_efg_last_n_games = efg_last_n_games(last_n_games)[:top_n_teams]
     top_10_pace_last_n_games = pace_last_n_games(last_n_games)[:top_n_teams]
@@ -50,23 +31,6 @@ def overs_last_n_games(top_n_teams: int, last_n_games=None) -> list:
     last_10_pace_matchups = [entry.split(' ')[-1] for entry in top_10_pace_last_n_games['TEAM_NAME'] if entry.split(' ')[-1] in teams_playing]
 
     return [matchup for matchup in matchups if (matchup[0] in last_10_efg_matchups and matchup[1] in last_10_pace_matchups) or (matchup[0] in last_10_pace_matchups and matchup[1] in last_10_efg_matchups)]
-
-def get_team_advanced_stats_last_n_games(games: int) -> DataFrame:
-    if games is None:
-        team_advanced_stats = leaguedashteamstats.LeagueDashTeamStats(measure_type_detailed_defense='Advanced')
-    else:
-        team_advanced_stats = leaguedashteamstats.LeagueDashTeamStats(last_n_games=games,
-                                                                      measure_type_detailed_defense='Advanced')
-
-    return team_advanced_stats.get_data_frames()[0]
-
-def get_team_stats_last_n_games(games: int) -> DataFrame:
-    if games is None:
-        team_advanced_stats = leaguedashteamstats.LeagueDashTeamStats()
-    else:
-        team_advanced_stats = leaguedashteamstats.LeagueDashTeamStats(last_n_games=games)
-
-    return team_advanced_stats.get_data_frames()[0]
 
 def efg_last_n_games(games: int) -> DataFrame:
     team_advanced_stats = get_team_advanced_stats_last_n_games(games)
