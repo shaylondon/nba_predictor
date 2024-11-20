@@ -63,7 +63,7 @@ def main():
     if not matchups:
         print('No matchups fit criteria on this date.')
         return
-    matchups_with_pts = [project_total_pts(matchup,last_n_games) for matchup in matchups]
+    matchups_with_pts = [avg_total_pts_last_n_games(matchup, last_n_games) for matchup in matchups]
     for over_game in matchups_with_pts:
         for game in get_total_lines():
             if over_game[0] == game[0]:
