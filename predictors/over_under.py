@@ -37,7 +37,8 @@ def get_total_lines() -> list:
     return lines
 
 def avg_total_pts_last_n_games(matchup: list, last_n_games: int) -> list:
-    return [matchup[0], matchup[1], team_ppg_last_n_games(matchup, last_n_games)[0][1] + team_ppg_last_n_games(matchup, last_n_games)[1][1]]
+    return [matchup[0], matchup[1], team_ppg_last_n_games(matchup, last_n_games)[0][1]
+            + team_ppg_last_n_games(matchup, last_n_games)[1][1]]
 
 def overs_last_n_games(top_n_teams: int, last_n_games=None) -> list:
     top_10_efg_last_n_games = efg_last_n_games(last_n_games)[:top_n_teams]
@@ -45,10 +46,14 @@ def overs_last_n_games(top_n_teams: int, last_n_games=None) -> list:
     matchups = get_matchups()
     teams_playing = get_teams_playing()
 
-    last_n_efg_teams_playing = [entry.split(' ')[-1] for entry in top_10_efg_last_n_games['TEAM_NAME'] if entry.split(' ')[-1] in teams_playing]
-    last_n_pace_teams_playing = [entry.split(' ')[-1] for entry in top_10_pace_last_n_games['TEAM_NAME'] if entry.split(' ')[-1] in teams_playing]
+    last_n_efg_teams_playing = [entry.split(' ')[-1] for entry in top_10_efg_last_n_games['TEAM_NAME']
+                                if entry.split(' ')[-1] in teams_playing]
+    last_n_pace_teams_playing = [entry.split(' ')[-1] for entry in top_10_pace_last_n_games['TEAM_NAME']
+                                 if entry.split(' ')[-1] in teams_playing]
 
-    return [matchup for matchup in matchups if (matchup[0] in last_n_efg_teams_playing and matchup[1] in last_n_pace_teams_playing) or (matchup[0] in last_n_pace_teams_playing and matchup[1] in last_n_efg_teams_playing)]
+    return [matchup for matchup in matchups
+            if (matchup[0] in last_n_efg_teams_playing and matchup[1] in last_n_pace_teams_playing)
+            or (matchup[0] in last_n_pace_teams_playing and matchup[1] in last_n_efg_teams_playing)]
 
 def get_team_advanced_stats_last_n_games(games: int) -> DataFrame:
     if games is None:
@@ -87,8 +92,10 @@ def team_ppg_last_n_games(team_names: list, games=None) -> list:
     team_stats_df['TEAM_PPG']= team_stats_df.apply(lambda row: round(row.PTS / row.GP, 1), axis=1)
     team_stats_df['TEAM_NAME'] = team_stats_df.apply(lambda row: row.TEAM_NAME.split(' ')[-1], axis=1)
     team_ppg_df = team_stats_df[['TEAM_NAME','TEAM_PPG']]
-    teams_ppg.append([team_ppg_df.loc[team_ppg_df['TEAM_NAME'] == team_names[0]].iat[0,0], team_ppg_df.loc[team_ppg_df['TEAM_NAME'] == team_names[0]].iat[0,1]])
-    teams_ppg.append([team_ppg_df.loc[team_ppg_df['TEAM_NAME'] == team_names[1]].iat[0,0], team_ppg_df.loc[team_ppg_df['TEAM_NAME'] == team_names[1]].iat[0,1]])
+    teams_ppg.append([team_ppg_df.loc[team_ppg_df['TEAM_NAME'] == team_names[0]].iat[0,0],
+                      team_ppg_df.loc[team_ppg_df['TEAM_NAME'] == team_names[0]].iat[0,1]])
+    teams_ppg.append([team_ppg_df.loc[team_ppg_df['TEAM_NAME'] == team_names[1]].iat[0,0],
+                      team_ppg_df.loc[team_ppg_df['TEAM_NAME'] == team_names[1]].iat[0,1]])
     return teams_ppg
 
 def get_matchups() -> list:
@@ -99,7 +106,8 @@ def get_matchups() -> list:
 
 def get_teams_playing() -> list:
     live_scoreboard: dict = scoreboard.ScoreBoard().games.get_dict()
-    teams_playing: list = [game['awayTeam']['teamName'] for game in live_scoreboard] + [game['homeTeam']['teamName'] for game in live_scoreboard]
+    teams_playing: list = ([game['awayTeam']['teamName'] for game in live_scoreboard]
+                           + [game['homeTeam']['teamName'] for game in live_scoreboard])
 
     return teams_playing
 
@@ -117,7 +125,8 @@ def main():
                 over_game.append(game[2])
                 over_game.append(game[3])
 
-    df = pd.DataFrame(matchups_with_pts,columns=['Away Team','Home Team',f'Last {last_n_games} Games Avg Total Points', 'DraftKings Total Points Line', 'FanDuel Total Points Line'])
+    df = pd.DataFrame(matchups_with_pts,columns=['Away Team','Home Team',f'Last {last_n_games} Games Avg Total Points',
+                                                 'DraftKings Total Points Line', 'FanDuel Total Points Line'])
 
     print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
     
