@@ -16,5 +16,8 @@ This package is Open Source with an [MIT License](https://github.com/swar/nba_ap
 
 NBA.com has a [Terms of Use](https://www.nba.com/termsofuse) regarding the use of the NBA’s digital platforms.
 
+### Justification of Models
+Four Factors weights determined [here](https://squared2020.com/2017/09/05/introduction-to-olivers-four-factors/)
+
 ## LICENSE
 [MIT License](https://github.com/shaylondon/nba_predictive_model/blob/main/LICENSE)
