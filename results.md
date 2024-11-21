@@ -17,10 +17,11 @@
 
 ## November 20th, 2024
 ### OVERS - L10 Games
-* NO GAMES FIT CRITERIA
+* NO MATCHUPS FIT CRITERIA
 
 ## November 21st, 2024
 ### OVERS - L10 Games
+* NO MATCHUPS FIT CRITERIA
 ### ML - L5, L3 Games
 * [ - ] Pistons ML -122 @ Hornets (DK 9:28AM)
 * [ - ] Timberwolves @ Raptors +7 (DK 9:28AM)
