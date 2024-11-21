@@ -100,7 +100,8 @@ def team_ppg_last_n_games(team_names: list, games=None) -> list:
 
 def get_matchups() -> list:
     live_scoreboard: dict = scoreboard.ScoreBoard().games.get_dict()
-    matchups: list = [[game['awayTeam']['teamName'],game['homeTeam']['teamName']] for game in live_scoreboard]
+    matchups: list = [[game['awayTeam']['teamName'].split(' ')[-1], game['homeTeam']['teamName'].split(' ')[-1]]
+                      for game in live_scoreboard]
 
     return matchups
 
