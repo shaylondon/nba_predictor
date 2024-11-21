@@ -21,8 +21,7 @@
 
 ## November 21st, 2024
 ### OVERS - L10 Games
-### ML - L5 Games
-* [ - ] Pistons -118 @ Hornets (DK 10:35PM 11/20)
-* [ - ] Timberwolves -298 @ Raptors (DK 10:35PM 11/20)
-* [ - ] Jazz @ Spurs -148 (DK 10:35PM 11/20)
-* [ - ] Magic +164 @ Lakers(DK 10:35PM 11/20)
+### ML - L5, L3 Games
+* [ - ] Pistons ML -122 @ Hornets (DK 9:28AM)
+* [ - ] Timberwolves @ Raptors +7 (DK 9:28AM)
+* [ - ] Jazz @ Spurs ML -135 (DK 9:28AM)
