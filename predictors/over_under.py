@@ -45,10 +45,10 @@ def overs_last_n_games(top_n_teams: int, last_n_games=None) -> list:
     matchups = get_matchups()
     teams_playing = get_teams_playing()
 
-    last_10_efg_matchups = [entry.split(' ')[-1] for entry in top_10_efg_last_n_games['TEAM_NAME'] if entry.split(' ')[-1] in teams_playing]
-    last_10_pace_matchups = [entry.split(' ')[-1] for entry in top_10_pace_last_n_games['TEAM_NAME'] if entry.split(' ')[-1] in teams_playing]
+    last_n_efg_teams_playing = [entry.split(' ')[-1] for entry in top_10_efg_last_n_games['TEAM_NAME'] if entry.split(' ')[-1] in teams_playing]
+    last_n_pace_teams_playing = [entry.split(' ')[-1] for entry in top_10_pace_last_n_games['TEAM_NAME'] if entry.split(' ')[-1] in teams_playing]
 
-    return [matchup for matchup in matchups if (matchup[0] in last_10_efg_matchups and matchup[1] in last_10_pace_matchups) or (matchup[0] in last_10_pace_matchups and matchup[1] in last_10_efg_matchups)]
+    return [matchup for matchup in matchups if (matchup[0] in last_n_efg_teams_playing and matchup[1] in last_n_pace_teams_playing) or (matchup[0] in last_n_pace_teams_playing and matchup[1] in last_n_efg_teams_playing)]
 
 def get_team_advanced_stats_last_n_games(games: int) -> DataFrame:
     if games is None:
