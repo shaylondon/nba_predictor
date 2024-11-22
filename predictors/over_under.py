@@ -115,11 +115,11 @@ def get_teams_playing() -> list:
 def main():
     try:
         last_n_games = int(input('Last _ Games: '))
-    except:
+    except ValueError:
         last_n_games = None
     try:
         top_n_teams = int(input('Top _ Teams: '))
-    except:
+    except ValueError:
         top_n_teams = None
     matchups = overs_last_n_games(top_n_teams,last_n_games)
     if not matchups:
