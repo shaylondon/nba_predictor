@@ -15,13 +15,15 @@
 * [ **&check;** ] Cavaliers @ Celtics O235 (DK 11:07AM)
 * [ **&check;** ] Nuggets @ Grizzlies O227 (DK 11:07AM)
 
-## November 20th, 2024
-### OVERS - L10 Games
-* NO MATCHUPS FIT CRITERIA
-
 ## November 21st, 2024
-### OVERS - L10 Games
-* NO MATCHUPS FIT CRITERIA
 ### ML - L5, L3 Games
 * [ **X** ] Pistons ML -122 @ Hornets (DK 9:28AM)
 * [ **&check;** ] Timberwolves @ Raptors +7 (DK 9:28AM)
+
+## November 21st, 2024
+### OVERS - L10 Games
+* [ - ] Celtics @ Wizards O237.5 (FD 2:07PM)
+* [ - ] Pacers @ Bucks O237 (DK 2:19PM)
+### ML - L5, L3 Games
+* [ - ] Nets ML +154 @ 76ers (DK 2:20PM)
+* [ - ] Hawks ML -118 @ Bulls (DK 2:20PM)
