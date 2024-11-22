@@ -1,5 +1,5 @@
 
-## 4-2
+## 4-2 OVER, 0-1 ML
 ## November 17th, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -23,5 +23,5 @@
 ### OVERS - L10 Games
 * NO MATCHUPS FIT CRITERIA
 ### ML - L5, L3 Games
-* [ - ] Pistons ML -122 @ Hornets (DK 9:28AM)
+* [ **X** ] Pistons ML -122 @ Hornets (DK 9:28AM)
 * [ - ] Timberwolves @ Raptors +7 (DK 9:28AM)
