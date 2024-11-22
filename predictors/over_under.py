@@ -113,8 +113,14 @@ def get_teams_playing() -> list:
     return teams_playing
 
 def main():
-    last_n_games: int = int(input('Last _ Games: '))
-    top_n_teams: int = int(input('Top _ Teams: '))
+    try:
+        last_n_games = int(input('Last _ Games: '))
+    except:
+        last_n_games = None
+    try:
+        top_n_teams = int(input('Top _ Teams: '))
+    except:
+        top_n_teams = None
     matchups = overs_last_n_games(top_n_teams,last_n_games)
     if not matchups:
         print('No matchups fit criteria on this date.')
