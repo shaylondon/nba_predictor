@@ -24,4 +24,4 @@
 * NO MATCHUPS FIT CRITERIA
 ### ML - L5, L3 Games
 * [ **X** ] Pistons ML -122 @ Hornets (DK 9:28AM)
-* [ - ] Timberwolves @ Raptors +7 (DK 9:28AM)
+* [ **&check;** ] Timberwolves @ Raptors +7 (DK 9:28AM)
