@@ -25,4 +25,3 @@
 ### ML - L5, L3 Games
 * [ - ] Pistons ML -122 @ Hornets (DK 9:28AM)
 * [ - ] Timberwolves @ Raptors +7 (DK 9:28AM)
-* [ - ] Jazz @ Spurs ML -135 (DK 9:28AM)
