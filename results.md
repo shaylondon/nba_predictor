@@ -33,6 +33,5 @@
 * [ - ] Grizzlies @ Bulls O243 (DK 1:46PM)
 * [ - ] Nuggets @ Lakers O235 (DK 1:46PM)
 ### ML - L5, L3 Games
-* [ - ] Pistons ML +350 @ Magic (FD 1:50PM)
 * [ - ] Grizzlies @ Bulls ML +170 (DK 1:50PM)
 * [ - ] Warriors ML -146 @ Spurs (FD 1:50PM)
