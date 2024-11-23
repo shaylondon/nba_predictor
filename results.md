@@ -18,12 +18,21 @@
 ## November 21st, 2024
 ### ML - L5, L3 Games
 * [ **X** ] Pistons ML -122 @ Hornets (DK 9:28AM)
-* [ **&check;** ] Timberwolves @ Raptors +7 (DK 9:28AM)
+* [ **&check;** ] Timberwolves @ Raptors ML +225 (ESPN BET closing line)
 
-## November 21st, 2024
+## November 22nd, 2024
 ### OVERS - L10 Games
 * [ **X** ] Celtics @ Wizards O237.5 (FD 2:07PM)
 * [ **&check;** ] Pacers @ Bucks O237 (DK 2:19PM)
 ### ML - L5, L3 Games
 * [ **X** ] Nets ML +154 @ 76ers (DK 2:20PM)
-* [ - ] Hawks ML -118 @ Bulls (DK 2:20PM)
+* [ **X** ] Hawks ML -118 @ Bulls (DK 2:20PM)
+
+## November 21st, 2024
+### OVERS - L10 Games
+* [ - ] Grizzlies @ Bulls O243 (DK 1:46PM)
+* [ - ] Nuggets @ Lakers O235 (DK 1:46PM)
+### ML - L5, L3 Games
+* [ - ] Pistons ML +350 @ Magic (FD 1:50PM)
+* [ - ] Grizzlies @ Bulls ML +170 (DK 1:50PM)
+* [ - ] Warriors ML -146 @ Spurs (FD 1:50PM)
