@@ -1,5 +1,5 @@
 
-## 4-4 OVER, 1-2 ML
+## 5-3 OVER, 1-2 ML
 ## November 17th, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -23,7 +23,7 @@
 ## November 21st, 2024
 ### OVERS - L10 Games
 * [ **X** ] Celtics @ Wizards O237.5 (FD 2:07PM)
-* [ **X** ] Pacers @ Bucks O237 (DK 2:19PM)
+* [ **&check;** ] Pacers @ Bucks O237 (DK 2:19PM)
 ### ML - L5, L3 Games
 * [ **X** ] Nets ML +154 @ 76ers (DK 2:20PM)
 * [ - ] Hawks ML -118 @ Bulls (DK 2:20PM)
