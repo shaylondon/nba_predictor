@@ -1,5 +1,5 @@
 
-## 5-3 OVER, 1-2 ML
+## 7-5 OVER, 1-5 ML
 ## November 17th, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -30,8 +30,8 @@
 
 ## November 21st, 2024
 ### OVERS - L10 Games
-* [ - ] Grizzlies @ Bulls O243 (DK 1:46PM)
-* [ - ] Nuggets @ Lakers O235 (DK 1:46PM)
+* [ **&check;** ] Grizzlies @ Bulls O243 (DK 1:46PM)
+* [ **X** ] Nuggets @ Lakers O235 (DK 1:46PM)
 ### ML - L5, L3 Games
-* [ - ] Grizzlies @ Bulls ML +170 (DK 1:50PM)
-* [ - ] Warriors ML -146 @ Spurs (FD 1:50PM)
+* [ **X** ] Grizzlies @ Bulls ML +170 (DK 1:50PM)
+* [ **X** ] Warriors ML -146 @ Spurs (FD 1:50PM)
