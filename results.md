@@ -28,10 +28,18 @@
 * [ **X** ] Nets ML +154 @ 76ers (DK 2:20PM)
 * [ **X** ] Hawks ML -118 @ Bulls (DK 2:20PM)
 
-## November 21st, 2024
+## November 23rd, 2024
 ### OVERS - L10 Games
 * [ **&check;** ] Grizzlies @ Bulls O243 (DK 1:46PM)
 * [ **X** ] Nuggets @ Lakers O235 (DK 1:46PM)
 ### ML - L5, L3 Games
 * [ **X** ] Grizzlies @ Bulls ML +170 (DK 1:50PM)
 * [ **X** ] Warriors ML -146 @ Spurs (FD 1:50PM)
+
+## November 24th, 2024
+### OVERS - L10 Games
+* [ - ] Wizards @ Pacers O241 (DK 12:31PM)
+### ML - L5, L3 Games
+* [ - ] Wizards +12.5 @ Pacers (DK 12:32PM)
+* [ - ] Clippers ML -125 @ 76ers (DK 12:32PM)
+* [ - ] Raptors +11.5 @ Cavaliers (DK 12:32PM)
