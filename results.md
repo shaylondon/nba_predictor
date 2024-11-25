@@ -1,5 +1,5 @@
 
-## 7-6 OVER, 3-5 ML ($1U -> +$1.17)
+## 7-6 OVER, 3-6 ML (\$1U -> +\$0.96)
 ## November 17th, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -43,3 +43,14 @@
 * [ **&check;** ] Wizards +12.5 @ Pacers (DK 12:32PM)
 * [ **&check;** ] Clippers ML -125 @ 76ers (DK 12:32PM)
 * [ **X** ] Raptors +11.5 @ Cavaliers (DK 12:32PM)
+
+## November 25th, 2024
+### OVERS - L10 Games
+* [ - ] Knicks @ Nuggets O231.5 (FD 2:37PM) - Monitor KAT
+* [ - ] Nets @ Warriors O224 (FD 2:37PM)
+### ML - L5, L3 Games
+* [ - ] Raptors ML +165 @ Pistons (DK 2:40PM) - Monitor Cade
+* [ - ] Magic @ Hornets +5 (DK 2:40PM)
+* [ - ] Clippers ML +380 @ Celtics (DK 2:40PM)
+* [ - ] Mavericks ML +152 @ Hawks (DK 2:40PM) - Monitor Kyrie
+* [ - ] Knicks @ Nuggets ML -168 (FD 2:40PM)
