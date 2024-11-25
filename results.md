@@ -1,5 +1,5 @@
 
-## 7-6 OVER, 2-5 ML
+## 7-6 OVER, 3-5 ML ($1 -> +$2.17)
 ## November 17th, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -41,5 +41,5 @@
 * [ **X** ] Wizards @ Pacers O241 (DK 12:31PM)
 ### ML - L5, L3 Games
 * [ **&check;** ] Wizards +12.5 @ Pacers (DK 12:32PM)
-* [ - ] Clippers ML -125 @ 76ers (DK 12:32PM)
+* [ **&check;** ] Clippers ML -125 @ 76ers (DK 12:32PM)
 * [ - ] Raptors +11.5 @ Cavaliers (DK 12:32PM)
