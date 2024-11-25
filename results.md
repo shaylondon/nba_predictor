@@ -1,5 +1,5 @@
 
-## 7-6 OVER, 3-6 ML (\$1U -> +\$0.96)
+## 7-6 OVER (\$1U -> +\$0.37), 3-6 ML (\$1U -> -\$2.04)
 ## November 17th, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
