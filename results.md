@@ -52,5 +52,5 @@
 * [ **X** ] Raptors ML +165 @ Pistons (DK 2:40PM)
 * [ **X** ] Magic @ Hornets +5 (DK 2:40PM)
 * [ **X** ] Clippers ML +380 @ Celtics (DK 2:40PM)
-* [ - ] Mavericks ML +152 @ Hawks (DK 2:40PM)
+* [ **&check;** ] Mavericks ML +152 @ Hawks (DK 2:40PM)
 * [ - ] Knicks @ Nuggets ML -168 (FD 2:40PM)
