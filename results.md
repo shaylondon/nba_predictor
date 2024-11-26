@@ -49,8 +49,8 @@
 * [ - ] Knicks @ Nuggets O231.5 (FD 2:37PM) - Monitor KAT
 * [ - ] Nets @ Warriors O224 (FD 2:37PM)
 ### ML - L5, L3 Games
-* [ - ] Raptors ML +165 @ Pistons (DK 2:40PM)
-* [ - ] Magic @ Hornets +5 (DK 2:40PM)
-* [ - ] Clippers ML +380 @ Celtics (DK 2:40PM)
+* [ **X** ] Raptors ML +165 @ Pistons (DK 2:40PM)
+* [ **X** ] Magic @ Hornets +5 (DK 2:40PM)
+* [ **X** ] Clippers ML +380 @ Celtics (DK 2:40PM)
 * [ - ] Mavericks ML +152 @ Hawks (DK 2:40PM)
 * [ - ] Knicks @ Nuggets ML -168 (FD 2:40PM)
