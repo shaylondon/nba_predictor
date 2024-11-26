@@ -47,10 +47,10 @@
 ## November 25th, 2024
 ### OVERS - L10 Games
 * [ **&check;** ] Knicks @ Nuggets O231.5 (FD 2:37PM) - Monitor KAT
-* [ - ] Nets @ Warriors O224 (FD 2:37PM)
+* [ **&check;** ] Nets @ Warriors O224 (FD 2:37PM)
 ### ML - L5, L3 Games
 * [ **X** ] Raptors ML +165 @ Pistons (DK 2:40PM)
 * [ **X** ] Magic @ Hornets +5 (DK 2:40PM)
 * [ **X** ] Clippers ML +380 @ Celtics (DK 2:40PM)
 * [ **&check;** ] Mavericks ML +152 @ Hawks (DK 2:40PM)
-* [ **&check;** ] Knicks @ Nuggets ML -168 (FD 2:40PM)
+* [ **X** ] Knicks @ Nuggets ML -168 (FD 2:40PM)
