@@ -60,4 +60,3 @@
 * [ - ] Bucks ML +115 @ Heat (BetMGM 2:30PM)
 * [ - ] Rockets ML +136 @ Timberwolves (DK 2:30PM) - monitor Jalen Green
 * [ - ] Spurs ML -135 @ Jazz (DK 2:30PM)
-* [ - ] Lakers ML +115 @ Suns (BetMGM 2:30PM)
