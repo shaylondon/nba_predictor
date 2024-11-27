@@ -58,3 +58,14 @@
 ### ML - L5, L3 Games
 * [ **&check;** ] Rockets ML +136 @ Timberwolves (DK 2:30PM)
 * [ **&check;** ] Spurs ML -135 @ Jazz (DK 2:30PM)
+
+## November 27, 2024
+### OVERS - L10 Games
+* [ - ] Hawks @ Cavaliers O240.5 (DK 11:10AM)
+* [ - ] Knicks @ Mavericks O233 (FD 11:10AM)
+* [ - ] Nuggets @ Jazz O231 (FD 11:10AM) - Monitor Lauri
+### ML - L5, L3 Games
+* [ - ] Heat ML -165 @ Hornets (DK 11:30AM) 
+* [ - ] Raptors ML +125 @ Pelicans (DK 11:30AM)
+* [ - ] Lakers @ Spurs ML +115 (DK 11:30AM)
+* [ - ] Thunder ML -135 @ Warriors (DK 11:30AM)
