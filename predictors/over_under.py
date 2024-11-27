@@ -117,11 +117,8 @@ def main():
         last_n_games = int(input('Last _ Games: '))
     except ValueError:
         last_n_games = None
-    try:
-        top_n_teams = int(input('Top _ Teams: '))
-    except ValueError:
-        top_n_teams = None
-    matchups = overs_last_n_games(top_n_teams,last_n_games)
+    top_n_teams: int = 10
+    matchups = overs_last_n_games(top_n_teams, last_n_games)
     if not matchups:
         print('No matchups fit criteria on this date.')
         return
