@@ -1,4 +1,4 @@
-## 9-6 OVER (\$1U -> +\$2.19), 4-10 ML (\$1U -> -\$4.52)
+## 9-6 OVER (\$1U -> +\$2.19), 4-10 ML (\$1U -> -\$2.42)
 ## November 17, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -56,5 +56,5 @@
 
 ## November 26, 2024
 ### ML - L5, L3 Games
-* [ - ] Rockets ML +136 @ Timberwolves (DK 2:30PM)
-* [ - ] Spurs ML -135 @ Jazz (DK 2:30PM)
+* [ **&check;** ] Rockets ML +136 @ Timberwolves (DK 2:30PM)
+* [ **&check;** ] Spurs ML -135 @ Jazz (DK 2:30PM)
