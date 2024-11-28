@@ -61,10 +61,10 @@
 
 ## November 27, 2024
 ### OVERS - L10 Games
-* [ - ] Hawks @ Cavaliers O240.5 (DK 11:10AM)
-* [ - ] Knicks @ Mavericks O233 (FD 11:10AM)
+* [ **&check;** ] Hawks @ Cavaliers O240.5 (DK 11:10AM)
+* [ **&check;** ] Knicks @ Mavericks O233 (FD 11:10AM)
 ### ML - L5, L3 Games
-* [ - ] Heat ML -165 @ Hornets (DK 11:30AM) 
-* [ - ] Raptors ML +125 @ Pelicans (DK 11:30AM)
-* [ - ] Lakers @ Spurs ML +115 (DK 11:30AM)
-* [ - ] Thunder ML -135 @ Warriors (DK 11:30AM)
+* [ **&check;** ] Heat ML -165 @ Hornets (DK 11:30AM) 
+* [ **&check;** ] Raptors ML +125 @ Pelicans (DK 11:30AM)
+* [ **X** ] Lakers @ Spurs ML +115 (DK 11:30AM)
+* [ **&check;** ] Thunder ML -135 @ Warriors (DK 11:30AM)
