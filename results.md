@@ -63,7 +63,6 @@
 ### OVERS - L10 Games
 * [ - ] Hawks @ Cavaliers O240.5 (DK 11:10AM)
 * [ - ] Knicks @ Mavericks O233 (FD 11:10AM)
-* [ - ] Nuggets @ Jazz O231 (FD 11:10AM) - Monitor Lauri
 ### ML - L5, L3 Games
 * [ - ] Heat ML -165 @ Hornets (DK 11:30AM) 
 * [ - ] Raptors ML +125 @ Pelicans (DK 11:30AM)
