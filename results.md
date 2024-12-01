@@ -68,3 +68,12 @@
 * [ **&check;** ] Raptors ML +125 @ Pelicans (DK 11:30AM)
 * [ **X** ] Lakers @ Spurs ML +115 (DK 11:30AM)
 * [ **&check;** ] Thunder ML -135 @ Warriors (DK 11:30AM)
+
+## December 1, 2024
+### OVERS - L10 Games
+* [ - ] Pacers @ Grizzlies O 234.5 (ESPN Bet 12:52PM)
+### ML - L5, L3 Games
+* [ - ] Heat @ Raptors +4.5 (DK 12:55PM)
+* [ - ] Celtics ML -118 @ Cavaliers (DK 12:55PM)
+* [ - ] Spurs ML +200 @ Kings (DK 12:55PM)
+* [ - ] Nuggets ML -148 @ Clippers (DK 12:55PM)
