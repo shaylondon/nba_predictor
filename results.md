@@ -1,4 +1,4 @@
-## 11-6 OVER (\$1U -> +\$4.01), 7-11 ML (\$1U -> -\$0.82)
+## 12-6 OVER (\$1U -> +\$4.92), 7-11 ML (\$1U -> -\$0.82)
 ## November 17, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -71,9 +71,8 @@
 
 ## December 1, 2024
 ### OVERS - L10 Games
-* [ - ] Pacers @ Grizzlies O 234.5 (ESPN Bet 12:52PM)
+* [ **&check;** ] Pacers @ Grizzlies O 234.5 (ESPN Bet 12:52PM)
 ### ML - L5, L3 Games
 * [ - ] Heat @ Raptors +4.5 (DK 12:55PM)
-* [ - ] Celtics ML -118 @ Cavaliers (DK 12:55PM)
 * [ - ] Spurs ML +200 @ Kings (DK 12:55PM)
 * [ - ] Nuggets ML -148 @ Clippers (DK 12:55PM)
