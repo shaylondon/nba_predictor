@@ -74,5 +74,5 @@
 * [ **&check;** ] Pacers @ Grizzlies O 234.5 (ESPN Bet 12:52PM)
 ### ML - L5, L3 Games
 * [ **&check;** ] Heat @ Raptors +4.5 (DK 12:55PM)
-* [ - ] Spurs ML +200 @ Kings (DK 12:55PM)
-* [ - ] Nuggets ML -148 @ Clippers (DK 12:55PM)
+* [ **&check;** ] Spurs ML +200 @ Kings (DK 12:55PM)
+* [ **X** ] Nuggets ML -148 @ Clippers (DK 12:55PM)
