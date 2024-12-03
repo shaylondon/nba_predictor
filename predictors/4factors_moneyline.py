@@ -1,5 +1,6 @@
 from datetime import datetime
 
+import copy
 import pandas as pd
 import requests
 from nba_api.live.nba.endpoints import scoreboard
@@ -9,6 +10,17 @@ from tabulate import tabulate
 
 from config import *
 from over_under import *
+
+def test_nba_api_connection() -> bool:
+    try:
+        leaguedashteamstats.LeagueDashTeamStats(last_n_games=5,
+                                                measure_type_detailed_defense='Four Factors')
+    except Exception as e:
+        print(f"Unable to connect to stats.nba.com, Exception: {e}")
+        return False
+
+    print("Connection Established")
+    return True
 
 def get_moneylines() -> list:
     json_data = get_betting_info()
@@ -24,7 +36,7 @@ def get_moneylines() -> list:
 
 def get_team_4factors_stats_last_n_games(games: int) -> DataFrame:
     if games is None:
-        team_4factors_stats = leaguedashteamstats.LeagueDashTeamStats()
+        team_4factors_stats = leaguedashteamstats.LeagueDashTeamStats(measure_type_detailed_defense='Four Factors')
     else:
         team_4factors_stats = leaguedashteamstats.LeagueDashTeamStats(last_n_games=games,
                                                                       measure_type_detailed_defense='Four Factors')
@@ -52,33 +64,27 @@ def calculate_4factor_score(team: str, games=None) -> float:
     return score
 
 
-def main():
+def calculate(last_n_games: int):
     if not test_nba_api_connection():
         return
-    moneylines = get_moneylines()
-    matchups_last_5, matchups_last_3 = moneylines, moneylines
-    for matchup in matchups_last_5:
-        matchup.insert(2, calculate_4factor_score(matchup[1], 5))
-        matchup.insert(2, calculate_4factor_score(matchup[0], 5))
 
-    for matchup in matchups_last_3:
-        matchup.insert(2, calculate_4factor_score(matchup[1], 3))
-        matchup.insert(2, calculate_4factor_score(matchup[0], 3))
+    matchups= get_moneylines()
 
-    df_l5 = pd.DataFrame(matchups_last_5,columns=['Away Team','Home Team',
-                                        f'Away Last 5 Games 4 Factor Rating',
-                                        f'Home Last 5 Games 4 Factor Rating',
-                                        'DK Away Spread',
-                                        'DK Away ML', 'DK Home ML'])
-    df_l3 = pd.DataFrame(matchups_last_3,columns=['Away Team','Home Team',
-                                        f'Away Last 3 Games 4 Factor Rating',
-                                        f'Home Last 3 Games 4 Factor Rating',
-                                        'DK Away Spread',
-                                        'DK Away ML', 'DK Home ML'])
+    for matchup in matchups:
+        matchup.insert(2, calculate_4factor_score(matchup[1], last_n_games))
+        matchup.insert(2, calculate_4factor_score(matchup[0], last_n_games))
 
-    print("Last 5")
+    df_l5 = pd.DataFrame(matchups, columns=['Away Team','Home Team',
+                                            f'Away Last {last_n_games} Games 4 Factor Rating',
+                                            f'Home Last {last_n_games} Games 4 Factor Rating',
+                                            'DK Away Spread',
+                                            'DK Away ML', 'DK Home ML'])
+
+    print(f"Last {last_n_games} Games:")
     print(tabulate(df_l5, headers='keys', tablefmt='psql', showindex=False))
-    print("Last 3")
-    print(tabulate(df_l3, headers='keys', tablefmt='psql', showindex=False))
-    
+
+def main():
+    calculate(5)
+    calculate(3)
+
 if __name__ == "__main__": main()
