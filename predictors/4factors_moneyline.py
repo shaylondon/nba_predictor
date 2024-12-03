@@ -19,9 +19,7 @@ def get_moneylines() -> list:
         dk_spread = json_data['events'][i]['lines']['19']['spread']['point_spread_away']
         dk_ml1 = json_data['events'][i]['lines']['19']['moneyline']['moneyline_away']
         dk_ml2 = json_data['events'][i]['lines']['19']['moneyline']['moneyline_home']
-        fd_ml1 = json_data['events'][i]['lines']['23']['moneyline']['moneyline_away']
-        fd_ml2 = json_data['events'][i]['lines']['23']['moneyline']['moneyline_home']
-        lines.append([team1, team2, dk_spread, dk_ml1, dk_ml2, fd_ml1, fd_ml2])
+        lines.append([team1, team2, dk_spread, dk_ml1, dk_ml2])
     return lines
 
 def get_team_4factors_stats_last_n_games(games: int) -> DataFrame:
@@ -55,18 +53,32 @@ def calculate_4factor_score(team: str, games=None) -> float:
 
 
 def main():
-    last_n_games: int = int(input('Last _ Games: '))
-    matchups = get_moneylines()
-    for matchup in matchups:
-        matchup.insert(2, calculate_4factor_score(matchup[1], last_n_games))
-        matchup.insert(2, calculate_4factor_score(matchup[0], last_n_games))
+    if not test_nba_api_connection():
+        return
+    moneylines = get_moneylines()
+    matchups_last_5, matchups_last_3 = moneylines, moneylines
+    for matchup in matchups_last_5:
+        matchup.insert(2, calculate_4factor_score(matchup[1], 5))
+        matchup.insert(2, calculate_4factor_score(matchup[0], 5))
 
-    df = pd.DataFrame(matchups,columns=['Away Team','Home Team',
-                                        f'Away Last {last_n_games} Games 4 Factor Rating',
-                                        f'Home Last {last_n_games} Games 4 Factor Rating',
+    for matchup in matchups_last_3:
+        matchup.insert(2, calculate_4factor_score(matchup[1], 3))
+        matchup.insert(2, calculate_4factor_score(matchup[0], 3))
+
+    df_l5 = pd.DataFrame(matchups_last_5,columns=['Away Team','Home Team',
+                                        f'Away Last 5 Games 4 Factor Rating',
+                                        f'Home Last 5 Games 4 Factor Rating',
                                         'DK Away Spread',
-                                        'DK Away ML', 'DK Home ML','FD Away ML', 'FD Home ML'])
+                                        'DK Away ML', 'DK Home ML'])
+    df_l3 = pd.DataFrame(matchups_last_3,columns=['Away Team','Home Team',
+                                        f'Away Last 3 Games 4 Factor Rating',
+                                        f'Home Last 3 Games 4 Factor Rating',
+                                        'DK Away Spread',
+                                        'DK Away ML', 'DK Home ML'])
 
-    print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
+    print("Last 5")
+    print(tabulate(df_l5, headers='keys', tablefmt='psql', showindex=False))
+    print("Last 3")
+    print(tabulate(df_l3, headers='keys', tablefmt='psql', showindex=False))
     
 if __name__ == "__main__": main()
