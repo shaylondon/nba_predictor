@@ -9,6 +9,15 @@ from tabulate import tabulate
 
 from config import *
 
+def test_nba_api_connection() -> bool:
+    try:
+        leaguedashteamstats.LeagueDashTeamStats(measure_type_detailed_defense='Advanced')
+    except:
+        print("Unable to connect to stats.nba.com")
+        return False
+
+    return True
+
 
 def get_betting_info():
     today: str = datetime.today().strftime('%Y-%m-%d')
@@ -32,8 +41,7 @@ def get_total_lines() -> list:
         team1 = json_data['events'][i]['teams'][0]['name'].split(' ')[-1]
         team2 = json_data['events'][i]['teams'][1]['name'].split(' ')[-1]
         dk_total = json_data['events'][i]['lines']['19']['total']['total_over']
-        fd_total = json_data['events'][i]['lines']['23']['total']['total_over']
-        lines.append([team1, team2, dk_total, fd_total])
+        lines.append([team1, team2, dk_total])
     return lines
 
 def avg_total_pts_last_n_games(matchup: list, last_n_games: int) -> list:
@@ -113,6 +121,8 @@ def get_teams_playing() -> list:
     return teams_playing
 
 def main():
+    if not test_nba_api_connection():
+        return
     try:
         last_n_games = int(input('Last _ Games: '))
     except ValueError:
@@ -127,10 +137,9 @@ def main():
         for game in get_total_lines():
             if over_game[0] == game[0]:
                 over_game.append(game[2])
-                over_game.append(game[3])
 
     df = pd.DataFrame(matchups_with_pts,columns=['Away Team','Home Team',f'Last {last_n_games} Games Avg Total Points',
-                                                 'DraftKings Total Points Line', 'FanDuel Total Points Line'])
+                                                 'DraftKings Total Points Line'])
 
     print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
     
