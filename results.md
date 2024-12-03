@@ -76,3 +76,11 @@
 * [ **&check;** ] Heat @ Raptors +4.5 (DK 12:55PM)
 * [ **&check;** ] Spurs ML +200 @ Kings (DK 12:55PM)
 * [ **X** ] Nuggets ML -148 @ Clippers (DK 12:55PM)
+
+## December 3, 2024
+### OVERS - L10 Games
+* [ - ] Wizards @ Cavaliers O234 (DK 12:27PM)
+* [ - ] Grizzlies @ Mavericks O244 (DK 12:27PM)
+* [ - ] Warriors @ Nuggets O237 (DK 12:27PM)
+* [ - ] Rockets @ Kings O227.5 (DK 12:27PM)
+### ML - L5, L3 Games
