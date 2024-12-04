@@ -7,7 +7,7 @@ from nba_api.stats.endpoints import leaguedashteamstats
 from pandas import DataFrame
 from tabulate import tabulate
 
-from config import *
+from config import TheRundown_API_KEY
 
 def test_nba_api_connection() -> bool:
     try:
@@ -134,21 +134,18 @@ def get_teams_playing() -> list:
 def main():
     if not test_nba_api_connection():
         return
-    try:
-        last_n_games = int(input('Last _ Games: '))
-    except ValueError:
-        last_n_games = None
-    matchups = overs_last_n_games(10, last_n_games)
+
+    matchups = overs_last_n_games(10, 10)
     if not matchups:
         print('No matchups fit criteria on this date.')
         return
-    matchups_with_pts = [avg_total_pts_last_n_games(matchup, last_n_games) for matchup in matchups]
+    matchups_with_pts = [avg_total_pts_last_n_games(matchup, 10) for matchup in matchups]
     for over_game in matchups_with_pts:
         for game in get_total_lines():
             if over_game[0] == game[0]:
                 over_game.append(game[2])
 
-    df = pd.DataFrame(matchups_with_pts,columns=['Away Team','Home Team',f'Last {last_n_games} Games Avg Total Points',
+    df = pd.DataFrame(matchups_with_pts,columns=['Away Team','Home Team',f'Last 10 Games Avg Total Points',
                                                  'DraftKings Total Points Line'])
 
     try:
