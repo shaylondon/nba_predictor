@@ -8,19 +8,7 @@ from nba_api.stats.endpoints import leaguedashteamstats
 from pandas import DataFrame
 from tabulate import tabulate
 
-from config import *
 from over_under import *
-
-def test_nba_api_connection() -> bool:
-    try:
-        leaguedashteamstats.LeagueDashTeamStats(last_n_games=5,
-                                                measure_type_detailed_defense='Four Factors')
-    except Exception as e:
-        print(f"Unable to connect to stats.nba.com, Exception: {e}")
-        return False
-
-    print("Connection Established")
-    return True
 
 def get_moneylines() -> list:
     json_data = get_betting_info()
@@ -64,27 +52,37 @@ def calculate_4factor_score(team: str, games=None) -> float:
     return score
 
 
-def calculate(last_n_games: int):
+def main():
     if not test_nba_api_connection():
         return
 
-    matchups= get_moneylines()
+    last_n_games = input('Last _ Games: ')
+    if last_n_games == 'c':
+        open('../ml_table.txt', 'w').close()
+        last_n_games = input('Last _ Games: ')
+    try:
+        int(last_n_games)
+    except ValueError:
+        last_n_games = None
+    matchups = get_moneylines()
 
     for matchup in matchups:
         matchup.insert(2, calculate_4factor_score(matchup[1], last_n_games))
         matchup.insert(2, calculate_4factor_score(matchup[0], last_n_games))
 
-    df_l5 = pd.DataFrame(matchups, columns=['Away Team','Home Team',
+    df = pd.DataFrame(matchups, columns=['Away Team','Home Team',
                                             f'Away Last {last_n_games} Games 4 Factor Rating',
                                             f'Home Last {last_n_games} Games 4 Factor Rating',
                                             'DK Away Spread',
                                             'DK Away ML', 'DK Home ML'])
 
-    print(f"Last {last_n_games} Games:")
-    print(tabulate(df_l5, headers='keys', tablefmt='psql', showindex=False))
-
-def main():
-    calculate(5)
-    calculate(3)
+    try:
+        file = open('../output.txt', 'a')
+        file.write(f"\nLast {last_n_games} Games:\n")
+        file.write(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
+        file.close()
+    except:
+        print(f"Last {last_n_games} Games:")
+        print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
 
 if __name__ == "__main__": main()
