@@ -11,7 +11,7 @@ from config import *
 
 def test_nba_api_connection() -> bool:
     try:
-        leaguedashteamstats.LeagueDashTeamStats(measure_type_detailed_defense='Advanced')
+        leaguedashteamstats.LeagueDashTeamStats()
     except:
         print("Unable to connect to stats.nba.com")
         return False
