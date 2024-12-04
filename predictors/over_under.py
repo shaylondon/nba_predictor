@@ -83,14 +83,25 @@ def get_team_stats_last_n_games(games: int) -> DataFrame:
 def efg_last_n_games(games: int) -> DataFrame:
     team_advanced_stats = get_team_advanced_stats_last_n_games(games)
     efg = team_advanced_stats[['TEAM_NAME','EFG_PCT_RANK', 'EFG_PCT']].sort_values(by='EFG_PCT_RANK')
-    print(efg[:10])
+    try:
+        file = open('../output.txt', 'a')
+        file.write(tabulate(efg[:10], headers='keys', tablefmt='psql', showindex=False))
+        file.close()
+    except:
+        print(efg[:10])
+
 
     return efg
 
 def pace_last_n_games(games: int) -> DataFrame:
     team_advanced_stats = get_team_advanced_stats_last_n_games(games)
     pace = team_advanced_stats[['TEAM_NAME','PACE_RANK', 'PACE']].sort_values(by='PACE_RANK')
-    print(pace[:10])
+    try:
+        file = open('../output.txt', 'a')
+        file.write(tabulate(pace[:10], headers='keys', tablefmt='psql', showindex=False))
+        file.close()
+    except:
+        print(pace[:10])
 
     return pace
 
@@ -127,8 +138,7 @@ def main():
         last_n_games = int(input('Last _ Games: '))
     except ValueError:
         last_n_games = None
-    top_n_teams: int = 10
-    matchups = overs_last_n_games(top_n_teams, last_n_games)
+    matchups = overs_last_n_games(10, last_n_games)
     if not matchups:
         print('No matchups fit criteria on this date.')
         return
@@ -141,6 +151,11 @@ def main():
     df = pd.DataFrame(matchups_with_pts,columns=['Away Team','Home Team',f'Last {last_n_games} Games Avg Total Points',
                                                  'DraftKings Total Points Line'])
 
-    print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
+    try:
+        file = open('../output.txt', 'a')
+        file.write(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
+        file.close()
+    except:
+        print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
     
 if __name__ == "__main__": main()
