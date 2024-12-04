@@ -84,3 +84,7 @@
 * [ - ] Warriors @ Nuggets O237 (DK 12:27PM)
 * [ - ] Rockets @ Kings O227.5 (DK 12:27PM)
 ### ML - L5, L3 Games
+* [ - ] Bucks ML -150 @ Pistons (ESPN Bet Closing Line)
+* [ - ] Pacers @ Raptors ML +136 (DK 6:29PM)
+* [ - ] Magic ML +164 @ Knicks (DK 6:29PM)
+* [ - ] Rockets ML +105 @ Kings (DK 6:29PM)
