@@ -1,4 +1,4 @@
-## 12-6 OVER (\$1U -> +\$4.92), 9-12 ML (\$1U -> +\$1.09)
+## 13-9 OVER (\$1U -> +\$2.83), 11-13 ML (\$1U -> +\$1.12)
 ## November 17, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -79,12 +79,17 @@
 
 ## December 3, 2024
 ### OVERS - L10 Games
-* [ - ] Wizards @ Cavaliers O234 (DK 12:27PM)
-* [ - ] Grizzlies @ Mavericks O244 (DK 12:27PM)
-* [ - ] Warriors @ Nuggets O237 (DK 12:27PM)
-* [ - ] Rockets @ Kings O227.5 (DK 12:27PM)
+* [ **X** ] Wizards @ Cavaliers O234 (DK 12:27PM)
+* [ **X** ] Grizzlies @ Mavericks O244 (DK 12:27PM)
+* [ **X** ] Warriors @ Nuggets O237 (DK 12:27PM)
+* [ **&check;** ] Rockets @ Kings O227.5 (DK 12:27PM)
 ### ML - L5, L3 Games
-* [ - ] Bucks ML -150 @ Pistons (ESPN Bet Closing Line)
-* [ - ] Pacers @ Raptors ML +136 (DK 6:29PM)
-* [ - ] Magic ML +164 @ Knicks (DK 6:29PM)
-* [ - ] Rockets ML +105 @ Kings (DK 6:29PM)
+* [ **&check;** ] Bucks ML -150 @ Pistons (ESPN Bet Closing Line)
+* [ **&check;** ] Pacers @ Raptors ML +136 (DK 6:29PM)
+* [ **X** ] Magic ML +164 @ Knicks (DK 6:29PM)
+* [ **X** ] Rockets ML +105 @ Kings (DK 6:29PM)
+
+## December 4, 2024
+### OVERS - L10 Games
+* _ Pacers @ Nets O225.5 (DK 5:25PM)
+* _ Hawks @ Bucks O236 (DK 5:25PM)
