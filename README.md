@@ -7,6 +7,10 @@ This model accesses [NBA.com](https://www.nba.com/stats) official stats and uses
 ```bash
 pip install nba_api pandas requests tabulate
 ```
+To run:
+```bash
+python predictors/driver.py
+```
 ## NBA API
 This model uses Swar Patel's [`nba_api`](https://github.com/swar/nba_api) API Client.
 
