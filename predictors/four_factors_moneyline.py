@@ -57,9 +57,6 @@ def main():
         return
 
     last_n_games = input('Last _ Games: ')
-    if last_n_games == 'c':
-        open('../ml_table.txt', 'w').close()
-        last_n_games = input('Last _ Games: ')
     try:
         int(last_n_games)
     except ValueError:
