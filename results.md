@@ -93,3 +93,11 @@
 ### OVERS - L10 Games
 * [ **X** ] Pacers @ Nets O225.5 (DK 5:25PM)
 * [ **X** ] Hawks @ Bucks O236 (DK 5:25PM)
+
+## December 5, 2024
+### OVERS - L10 Games
+* _ Nuggets @ Cavaliers O233.5 (DK 5:19PM)
+* _ Mavericks @ Wizards O232.5 (DK 5:19PM)
+### ML - L5, L3 Games
+* _ Bulls ML +110 @ Spurs (DK 5:19PM)
+* _ Suns ML -125 @ Pelicans (DK 5:19PM)
