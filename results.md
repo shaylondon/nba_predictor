@@ -1,4 +1,4 @@
-## 13-9 OVER (\$1U -> +\$2.83), 11-13 ML (\$1U -> +\$1.12)
+## 13-11 OVER (\$1U -> +\$0.83), 11-13 ML (\$1U -> +\$1.12)
 ## November 17, 2024
 ### OVERS - L10 Games
 * [ **X** ] Nuggets @ Grizzlies O227.5 (DK 3:54PM)
@@ -91,5 +91,5 @@
 
 ## December 4, 2024
 ### OVERS - L10 Games
-* _ Pacers @ Nets O225.5 (DK 5:25PM)
-* _ Hawks @ Bucks O236 (DK 5:25PM)
+* [ **X** ] Pacers @ Nets O225.5 (DK 5:25PM)
+* [ **X** ] Hawks @ Bucks O236 (DK 5:25PM)
