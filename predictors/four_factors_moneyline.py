@@ -52,11 +52,10 @@ def calculate_4factor_score(team: str, games=None) -> float:
     return score
 
 
-def main():
+def main(last_n_games: int):
     if not test_nba_api_connection():
         return
 
-    last_n_games = input('Last _ Games: ')
     try:
         int(last_n_games)
     except ValueError:
@@ -81,5 +80,3 @@ def main():
     except:
         print(f"Last {last_n_games} Games:")
         print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
-
-if __name__ == "__main__": main()
