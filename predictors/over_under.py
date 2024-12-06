@@ -83,12 +83,7 @@ def get_team_stats_last_n_games(games: int) -> DataFrame:
 def efg_last_n_games(games: int) -> DataFrame:
     team_advanced_stats = get_team_advanced_stats_last_n_games(games)
     efg = team_advanced_stats[['TEAM_NAME','EFG_PCT_RANK', 'EFG_PCT']].sort_values(by='EFG_PCT_RANK')
-    try:
-        file = open('../output.txt', 'a')
-        file.write(tabulate(efg[:10], headers='keys', tablefmt='psql', showindex=False))
-        file.close()
-    except:
-        print(efg[:10])
+    print(efg[:10])
 
 
     return efg
@@ -96,12 +91,7 @@ def efg_last_n_games(games: int) -> DataFrame:
 def pace_last_n_games(games: int) -> DataFrame:
     team_advanced_stats = get_team_advanced_stats_last_n_games(games)
     pace = team_advanced_stats[['TEAM_NAME','PACE_RANK', 'PACE']].sort_values(by='PACE_RANK')
-    try:
-        file = open('../output.txt', 'a')
-        file.write(tabulate(pace[:10], headers='keys', tablefmt='psql', showindex=False))
-        file.close()
-    except:
-        print(pace[:10])
+    print(pace[:10])
 
     return pace
 
@@ -149,10 +139,13 @@ def main():
                                                  'DraftKings Total Points Line'])
 
     try:
-        file = open('../output.txt', 'a')
+        file = open('../output.txt', 'r')
+        original_text = file.read()
+        file.close()
+
+        file = open('../output.txt', 'w')
         file.write(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
+        file.write(original_text)
         file.close()
     except:
         print(tabulate(df, headers='keys', tablefmt='psql', showindex=False))
-    
-if __name__ == "__main__": main()
