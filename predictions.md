@@ -1,5 +1,6 @@
 ## December 7, 2024
 ### O/U, L10 Games
-* Hawks @ Knicks O237.5 (DK 5:00PM)
+* Wizards @ Cavaliers O232.5 (DK 2:21PM)
+* Nets @ Grizzlies O228.5 (DK 2:21PM)
 ### ML, L5 & L3 Games
-* Warriors +2.5 @ Rockets (DK 5:00PM)
+* Spurs ML -160 @ Trail Blazers (DK 2:21PM)
