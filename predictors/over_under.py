@@ -23,7 +23,7 @@ def get_betting_info():
     today: str = datetime.today().strftime('%Y-%m-%d')
     url = "https://therundown-therundown-v1.p.rapidapi.com/sports/4/events/%s" % today
 
-    querystring = { "affiliate_ids": "19,23", "offset": "300"}
+    querystring = { "affiliate_ids": "19", "offset": "300"}
 
     headers = {
         "x-rapidapi-key": TheRundown_API_KEY,
