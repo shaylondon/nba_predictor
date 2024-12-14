@@ -23,7 +23,7 @@ def get_betting_info():
     today: str = datetime.today().strftime('%Y-%m-%d')
     url = "https://therundown-therundown-v1.p.rapidapi.com/sports/4/events/%s" % today
 
-    querystring = { "affiliate_ids": "19", "offset": "300"}
+    querystring = { "affiliate_ids": "2", "offset": "300"}
 
     headers = {
         "x-rapidapi-key": TheRundown_API_KEY,
@@ -40,8 +40,8 @@ def get_total_lines() -> list:
     for i in range(len(json_data['events'])):
         team1 = json_data['events'][i]['teams'][0]['name'].split(' ')[-1]
         team2 = json_data['events'][i]['teams'][1]['name'].split(' ')[-1]
-        dk_total = json_data['events'][i]['lines']['19']['total']['total_over']
-        lines.append([team1, team2, dk_total])
+        total = json_data['events'][i]['lines']['2']['total']['total_over']
+        lines.append([team1, team2, total])
     return lines
 
 def avg_total_pts_last_n_games(matchup: list, last_n_games: int) -> list:
@@ -136,7 +136,7 @@ def main():
                 over_game.append(game[2])
 
     df = pd.DataFrame(matchups_with_pts,columns=['Away Team','Home Team',f'Last 10 Games Avg Total Points',
-                                                 'DraftKings Total Points Line'])
+                                                 'Bovada Total Points Line'])
 
     try:
         file = open('../output.txt', 'r')

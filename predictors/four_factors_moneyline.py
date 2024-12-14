@@ -16,10 +16,10 @@ def get_moneylines() -> list:
     for i in range(len(json_data['events'])):
         team1 = json_data['events'][i]['teams'][0]['name'].split(' ')[-1]
         team2 = json_data['events'][i]['teams'][1]['name'].split(' ')[-1]
-        dk_spread = json_data['events'][i]['lines']['19']['spread']['point_spread_away']
-        dk_ml1 = json_data['events'][i]['lines']['19']['moneyline']['moneyline_away']
-        dk_ml2 = json_data['events'][i]['lines']['19']['moneyline']['moneyline_home']
-        lines.append([team1, team2, dk_spread, dk_ml1, dk_ml2])
+        spread = json_data['events'][i]['lines']['2']['spread']['point_spread_away']
+        ml_away = json_data['events'][i]['lines']['2']['moneyline']['moneyline_away']
+        ml_home = json_data['events'][i]['lines']['2']['moneyline']['moneyline_home']
+        lines.append([team1, team2, spread, ml_away, ml_home])
     return lines
 
 def get_team_4factors_stats_last_n_games(games: int) -> DataFrame:
