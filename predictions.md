@@ -1,5 +1,5 @@
-## December 7, 2024
+## December 15, 2024
 ### O/U, L10 Games
-* Hawks @ Bucks O232.5 (DK 12:12PM)
+* Pelicans @ Pacers O231 (Bovada 1:43PM)
 ### ML, L5 & L3 Games
-* NONE
+* Mavericks ML -145 @ Warriors (Bovada 1:43PM)
